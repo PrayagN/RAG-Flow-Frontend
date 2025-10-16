@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Define base theme variables */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --font-sans: 'Geist Sans', Arial, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+}
+
+/* Light theme (default) */
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
+/* Dark theme overrides via .dark class */
+.dark {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+}
+
+/* Usage in layout */
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
